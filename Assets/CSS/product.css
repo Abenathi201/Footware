@@ -1,0 +1,121 @@
+.container{
+    min-width: 100%;
+    background: #000000;
+}
+
+.row{
+    width: 100%;
+    padding: 0 5rem;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.625rem;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    padding: 0.625rem 1.125rem;
+    border-radius: 0.313rem;
+    font-family: inherit;
+    font-size: 0.313rem;
+    color: azure;
+}
+
+li a:hover{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+.navbar h1{
+    color: azure;
+    font-size: 2.188rem;
+    font-weight: 500;
+    margin-top: 0.625rem;
+}
+
+
+
+
+/* Product Styling */
+#items{
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap !important;
+}
+
+.item{
+    background-color: white;
+    border-radius: 1.25rem;
+    height: 37.5rem;
+}
+
+.item:hover img{
+    scale: 1.1;
+}
+
+.info h4, .info p{
+    margin: 0.625rem !important;
+    font-size: 1.25rem !important;
+}
+
+.item:hover {
+	box-shadow: 0.313rem 0.938rem 1.563rem #2c3e50 !important;
+}
+
+.item img {
+    border-radius: 7%;
+    height: 18.75rem !important;
+	margin: 1rem !important;
+    padding: 0 1.875 0 0 !important;
+	transition: all 0.3s !important;
+}
+
+.item a:link, .item a:visited{
+	color: #2c3e50;
+	display: inline-block;
+	text-decoration: none;
+	background-color: #ececec;
+	padding: 1.2rem 3rem;
+	border-radius: 1rem;
+	margin-top: 1rem;
+	font-size: 0.875rem;
+	transition: all 0.2s;
+}
+
+@media only screen and (max-width: 300px) {
+    .row{
+        min-width: 100%;
+    }
+    #items{
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
+    }
+    .item{
+        background-color: white;
+        border-radius: 20px !important;
+        height: 600px !important;
+        width: 390px !important;
+    }
+  }

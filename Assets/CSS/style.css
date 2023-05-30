@@ -1,0 +1,91 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100&display=swap'); */
+
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Work Sans', sans-serif;
+    text-align: center;
+}
+
+.container{
+    min-width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://i.postimg.cc/x1HBytPH/pexels-zain-ali-1027130.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.row{
+    width: 100%;
+    padding: 0px 5rem;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.625rem 0;
+    position: relative;
+    z-index: 1;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.625rem;
+}
+
+.navbar ul li{
+    list-style: none;
+}
+
+li a{
+    text-decoration: none;
+    padding: 0.625rem 1.125rem;
+    border-radius: 0.25rem;
+    font-family: inherit;
+    font-size: 1rem;
+    color: azure;
+}
+
+li a:hover{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+}
+
+.navbar h1{
+    color: azure;
+    font-size: 2.188rem;
+    font-weight: 500;
+    margin-top: 0.625rem;
+}
+
+.content{
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content h1{
+    font-size: 2.813rem;
+    color: azure;
+    font-weight: 400;
+}
+
+.content p{
+    font-size: 1.25rem;
+    color: azure;
+    font-weight: 300;
+}
