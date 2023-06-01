@@ -1,7 +1,7 @@
 products = [
     {
         id: 1,
-        name: "Random Name",
+        name: "Vans - Old Skool",
         Image: "https://i.postimg.cc/m21ykSCF/498ebc4b-6d00-45cd-8e16-cb1a87984ee3.jpg",
         details: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat sint architecto numquam  ! Hic neque facere odit nostrum quas modi sunt! Omnis obcaecati laboriosam dignissimos ab iste accusantium ad.",
         price: "$ 740"
@@ -69,7 +69,6 @@ products = [
 let items = document.getElementById('items')
 products.forEach((product) => {
     items.innerHTML += `
-    <div class="col-12 col-md-4 col-sm-6">
     <div class="item m-4 p-3" style="width:24.375rem">
         <img src="${product.Image}" class="card-img" style="width:100%">
         <div class="info">
@@ -77,7 +76,6 @@ products.forEach((product) => {
             <p class="text">${product.price}</p>
             <a href="#" class="item-btn">Add to Cart</a>
         </div>
-    </div>
     </div>
     `;
 })

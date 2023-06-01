@@ -10,7 +10,7 @@
     text-align: center;
 }
 
-.container{
+.container-fluid{
     min-width: 100%;
     min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(https://i.postimg.cc/x1HBytPH/pexels-zain-ali-1027130.jpg);
@@ -19,10 +19,10 @@
     background-size: cover;
 }
 
-.row{
+/* .row{
     width: 100%;
     padding: 0px 5rem;
-}
+} */
 
 .navbar{
     width: 100%;
@@ -88,4 +88,17 @@ li a:hover{
     font-size: 1.25rem;
     color: azure;
     font-weight: 300;
+}
+
+@media only screen and (max-width: 300px) {
+    .container-fluid{
+        min-width: 100% !important;
+        min-height: 100vh !important;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65));
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        min-width: 100%;
+    }
 }
